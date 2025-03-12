@@ -1,0 +1,451 @@
+  ------------------------INSTRUCTIONS--------------------------
+
+**Phase 1: Project Initialization & Requirements Understanding**
+
+1. **Prompt Review:** Read & understand this entire revised prompt before coding as well as ALL of the provided data within this prompt and/or ANY files/documents in the workspace. Grasp ALL instructions, requirements, objectives, and provided model files & config files from "Price-Predict" which are currently located in the "CRYPTO-CRYSTAL-BALL" folder in the local workspace.
+
+2. **Full Integration:** Create 'CRYSTAL-CRYPTO-BALL' Python program from scratch. FULLY integrate EVERY requirement, feature, function, system, guideline from this prompt.
+
+3. **Continuous Operation:** Develop program continuously, uninterrupted. DO NOT stop/pause until ALL prompt instructions are have been integrated into the program's code & have been verified to be functional as intended. Program MUST be fully functional & tested.
+
+4. **Output Deliverables:** Deliver TWO files:
+    * **Python Code File:** Complete, 100% functional source code for 'CRYSTAL-CRYPTO-BALL' - the program must be FULLY contained within all program files for this application. NO placeholders, incomplete sections, truncated/non-functional code. Ready for execution, aesthetically pleasing, commercial-grade.
+    * **`requirements.txt`:** List ALL external Python packages/libraries for 'CRYSTAL-CRYPTO-BALL'. ALL packages must be free, installable via `pip install -r requirements.txt`.
+    * **MODEL & CONFIG Files:** ALL of the model & config files (provided in the "CRYPTO-CRYSTAL-BALL" folder in the local workspace may be fully utilized in your program and will be provided to you in the local workspace's file for this program. Please ensure you include & export these files into your local workspace, and if you are required to modify ANY of the model or config files, then after you make all these changes, modifications & additions you MUST ensure that you update & save ANY files which you have modified, ensuring that these files are full & complete from beginning to end without ANY truncation or snipping of code segments!  
+
+5. **Rigorous Research & Documentation:** Conduct extensive internet research throughout development. Crucial for:
+    * **Documentation:** Get up-to-date docs for ALL Python libraries, functions, methods, algorithms, AI/ML frameworks, systems used.
+    * **Example Code:** Find & analyze code snippets, tutorials, open-source projects for crypto data, time-series forecasting, ML for finance, GUI (Tkinter, PyQt, etc.), relevant functionalities.
+    * **Similar Projects Analysis:** Investigate existing crypto prediction programs (Section 2.5 links) for architecture, features, implementation approaches.
+    * **Code Accuracy & Functionality:** BEFORE coding, verify correctness & functionality using official docs & reliable online resources.
+
+6. **No Placeholders/Incomplete/Simulated Code:** NO placeholders (`TODO`, `pass`), truncated code, simulated (fake or demonstration) code, unfinished/non-functional code in final Python file. Delivered code MUST be 100% complete, polished, commercial-grade, ready for deployment & MUST utilize actual real world data and provide real world accurate, precise predictions. 
+
+8. **Program Context & Goals:** 
+
+**Phase 2: Program Design & Feature Implementation - 'CRYSTAL-CRYPTO-BALL'**
+
+**2.0. Program Overview & Core Functionality**
+
+* **Program Name:** 'CRYSTAL-CRYPTO-BALL'. Prominently display in the GUI at the very top & center, shown in a futuristic 3-D color shifting (smooth) text font.
+* **Purpose:** Crypto forecasting/prediction program. Highly accurate minute-by-minute price predictions for cryptos. Target user: crypto futures trader for trading decisions (short/long futures).
+* **Commercial Grade & Comprehensive:** Commercial quality: robust, reliable, user-friendly, visually appealing, feature-rich, capable of producing extremely accurate & precise crypto currency price predictions.
+* **100% Free & Open-Source:** ALL Python packages, libraries, algorithms, data sources, systems MUST be 100% free/open-source. NO API keys, paid subscriptions, proprietary software. Program MUST function in free/open-source ecosystem.
+
+**2.1. Core Functionalities (Detailed)**
+
+* **Cryptocurrency Selection:**
+    * **GUI Element:** User-friendly GUI for crypto selection. MUST include BOTH:
+        * **Search Bar:** Text input to search crypto name/symbol in supported list. (Filters the dropdown list as the user types the crypto name/ticket/symbol)
+        * **Dropdown List:** Dropdown menu/list box that sets the target crypto currency, with ALL supported cryptos (Section 2.2) permitted. Searchable/navigable list. Includes a "SET" button next to it that the user can press in order to set the target crypto currency. (Once a selection is made, the full, complete name will be automatically filled in within the search bar.)
+    * **Supported Cryptocurrencies:** Support prediction for wide range (Section 2.2).
+
+* **Minute-by-Minute Historical Data Acquisition:**
+    * **Multiple Data Sources:** MINIMUM 5x individual (ideally more) independent & free to use methods and/or systems (without any API key or subscription) that will be used redundantly for acquiring up to date historical, live (up until the current time) crypto price data. Redundancy for data availability & robustness, so if one method/system fails to acquire the price data then the next method will be utilized, and if this method fails then the next method will be utilized, etc.
+    * **Data Granularity:** Minute-by-minute price crypto currency price data acquisition for the selected crypto currency. Retrieve & process minute-level data, formatting this data to be usable by the prediction models.
+    * **Data Depth:** Allow the user to set the data range/length (one slider for months, one slider for years) which will determine how far back the historical price data will be acquired.
+    * **Free Data Sources:** ALL data sources MUST be free, publicly accessible, NO API keys/paid subscriptions. 
+
+* **Minute-by-Minute Price Prediction Generation:**
+    * **Price Prediction Models** Integrate ALL 6x of the price prediction models provided in the "PRICE-PREDICT CODE" (models & config files) currently located in the "CRYPTO-CRYSTAL-BALL" folder in the local workspace with the user being able to enable/disable each individual model via a toggle switch. In addition to all 6x of these price prediction models, one additional "model" shall be listed (and enabled/disabled by the user) called the "MASTER PREDICTION" which will be a system you create & integrate into the program that acts as a "master" prediction which will run after all other enabled prediction models have finished & gives each prediction model different weights and attributes depending on their accuracy & precision, then interpolates all the calculated/generated data from each prediction model to provide one super accurate, highly precise master graph & prediction.
+    * **Input Data:** Feed acquired historical & properly formatted minute-by-minute crypto price data into prediction systems.
+    * **Prediction Horizon:** Generate precise minute-by-minute price predictions/forecasts for a user selected amount of time (anywhere from 1-hour to 30 days, via 2x sliders - one for hours, one for days) from the prediction generation time.
+    * **Minute-by-Minute Output:** Prediction output: minute-by-minute price forecasts for the selected amount of time.
+
+* **Customizable Crypto Price Prediction Charts:**
+   * **Integrate ALL of the customizable options, such as the ability for the user to adjust the colors (of each individual prediction model graph, the actual live price graph, the graph background lines, text colors, etc) & overlays (buy sell indicators, high low indicators, other indicators & visuals, etc).
+
+* **Program Utility for Crypto Futures Traders:**
+    * **Target User Focus:** Program design/features tailored for crypto futures traders. Goal: precise, actionable minute-by-minute predictions for informed trading decisions (short/long futures).
+    * **Actionable Insights:** Incorporate features/visualizations for trading signals/insights: Buy/Sell indicators, volatility metrics/predictions, volume predictions, confidence levels/probabilities, predicted support/resistance levels.
+    * **Comprehensive Information:** Include 'ALL beneficial info, data, features, systems' for minute-by-minute trading decisions. Critically think about trader needs, incorporate relevant tools beyond basic graph.
+
+**2.2. Supported Cryptocurrencies**
+
+Support prediction for ALL of the listed cryptos below. ENSURE data sources provide minute-by-minute data for ALL included. Prioritize as many from list as data sources/methods reliably handle ALL crypto currencies on the Coinbase & Binance crypto exchanges, as well as ALL the listed crypto currencies below: 
+````
+1. BTCUSDT  
+2. ETHUSDT  
+3. ETHFIUSDT  
+4. 1INCHUSDT  
+5. AAVEUSDT  
+6. ACEUSDT  
+7. ACHUSDT  
+8. ACXUSDT  
+9. ADAUSDT  
+10. AEROUSDT  
+11. AEVOUSDT  
+12. AIUSDT  
+13. AI16ZUSDT  
+14. AIOZUSDT  
+15. AIXBTUSDT  
+16. ALCHUSDT  
+17. ALGOUSDT  
+18. ALICEUSDT  
+19. ALPHAUSDT  
+20. ALTUSDT  
+21. ANIMEUSDT  
+22. ANKRUSDT  
+23. APEUSDT  
+24. API3USDT  
+25. APTUSDT  
+26. ARUSDT  
+27. ARBUSDT  
+28. ARPAUSDT  
+29. ASTRUSDT  
+30. ATHUSDT  
+31. ATOMUSDT  
+32. AUCTIONUSDT  
+33. AVAUSDT  
+34. AVAAIUSDT  
+35. AVAXUSDT  
+36. AXSUSDT  
+37. B3USDT  
+38. 1MBABYDOGEUSDT  
+39. BAKEUSDT  
+40. BALUSDT  
+41. BANUSDT  
+42. BANANAUSDT  
+43. BANDUSDT  
+44. BATUSDT  
+45. BBUSDT  
+46. BCHUSDT  
+47. BELUSDT  
+48. BERAUSDT  
+49. BICOUSDT  
+50. BIGTIMEUSDT  
+51. BIOUSDT  
+52. BLASTUSDT  
+53. BNBUSDT  
+54. BNTUSDT  
+55. BNXUSDT  
+56. BOMEUSDT  
+57. 1000BONKUSDT  
+58. BROCCOLIUSDT  
+59. BSVUSDT  
+60. BUZZUSDT  
+61. C98USDT  
+62. CAKEUSDT  
+63. CATIUSDT  
+64. CELOUSDT  
+65. CELRUSDT  
+66. CETUSUSDT  
+67. CFXUSDT  
+68. CGPTUSDT  
+69. CHRUSDT  
+70. CHZUSDT  
+71. CKBUSDT  
+72. COMPUSDT  
+73. COOKIEUSDT  
+74. COTIUSDT  
+75. COWUSDT  
+76. CRVUSDT  
+77. CTCUSDT  
+78. CTSIUSDT  
+79. CVXUSDT  
+80. CYBERUSDT  
+81. DEGENUSDT  
+82. DENTUSDT  
+83. DEXEUSDT  
+84. DFUSDT  
+85. DOGEUSDT  
+86. DOTUSDT  
+87. DUSKUSDT  
+88. DYDXUSDT  
+89. EDUUSDT  
+90. EGLDUSDT  
+91. EIGENUSDT  
+92. ENAUSDT  
+93. ENJUSDT  
+94. ENSUSDT  
+95. EOSUSDT  
+96. ETCUSDT  
+97. FARTCOINUSDT  
+98. FETUSDT  
+99. FILUSDT  
+100. FLMUSDT  
+101. FLOCKUSDT  
+102. 1000FLOKIUSDT  
+103. FLOWUSDT  
+104. FORTHUSDT  
+105. FOXYUSDT  
+106. FTNUSDT  
+107. FUELUSDT  
+108. FWOGUSDT  
+109. FXSUSDT  
+110. GALAUSDT  
+111. GASUSDT  
+112. GIGAUSDT  
+113. GLMUSDT  
+114. GMTUSDT  
+115. GMXUSDT  
+116. GNOUSDT  
+117. GOATUSDT  
+118. GODSUSDT  
+119. GPSUSDT  
+120. GRASSUSDT  
+121. GRIFFAINUSDT  
+122. GRTUSDT  
+123. HBARUSDT  
+124. HEIUSDT  
+125. HIFIUSDT  
+126. HIPPOUSDT  
+127. HIVEUSDT  
+128. HMSTRUSDT  
+129. ICPUSDT  
+130. ICXUSDT  
+131. IMXUSDT  
+132. INJUSDT  
+133. IOUSDT  
+134. IOSTUSDT  
+135. IOTAUSDT  
+136. IOTXUSDT  
+137. IPUSDT  
+138. JUSDT  
+139. JAILSTOOLUSDT  
+140. JASMYUSDT  
+141. JELLYJELLYUSDT  
+142. JTOUSDT  
+143. JUPUSDT  
+144. KAITOUSDT  
+145. KASUSDT  
+146. KAVAUSDT  
+147. KDAUSDT  
+148. KNCUSDT  
+149. KOMAUSDT  
+150. KSMUSDT  
+151. 10000LADYSUSDT  
+152. LAYERUSDT  
+153. LDOUSDT  
+154. LEVERUSDT  
+155. LINAUSDT  
+156. LINKUSDT  
+157. LOOKSUSDT  
+158. LPTUSDT  
+159. LQTYUSDT  
+160. LRCUSDT  
+161. LSKUSDT  
+162. LTCUSDT  
+163. LUCEUSDT  
+164. LUMIAUSDT  
+165. LUNA2USDT  
+166. 1000LUNCUSDT  
+167. MAGICUSDT  
+168. MANAUSDT  
+169. MANTAUSDT  
+170. MASKUSDT  
+171. MAVUSDT  
+172. MEUSDT  
+173. MELANIAUSDT  
+174. MEMEUSDT  
+175. MEWUSDT  
+176. MINAUSDT  
+177. MKRUSDT  
+178. MOCAUSDT  
+179. MOODENGUSDT  
+180. MOVEUSDT  
+181. MOVRUSDT  
+182. MTLUSDT  
+183. NCUSDT  
+184. NEARUSDT  
+185. NEIROETHUSDT  
+186. NEOUSDT  
+187. NMRUSDT  
+188. NOTUSDT  
+189. ONDOUSDT  
+190. ONEUSDT  
+191. ONTUSDT  
+192. OPUSDT  
+193. ORCAUSDT  
+194. ORDIUSDT  
+195. OXTUSDT  
+196. PAXGUSDT  
+197. PENDLEUSDT  
+198. PENGUUSDT  
+199. PEOPLEUSDT  
+200. 1000PEPEUSDT  
+201. PERPUSDT  
+202. PHAUSDT  
+203. PHBUSDT  
+204. PIPPINUSDT  
+205. PLUMEUSDT  
+206. PNUTUSDT  
+207. POLUSDT  
+208. POLYXUSDT  
+209. PONKEUSDT  
+210. PROMUSDT  
+211. PYTHUSDT  
+212. QNTUSDT  
+213. QTUMUSDT  
+214. RADUSDT  
+215. 1000RATSUSDT  
+216. RDNTUSDT  
+217. REZUSDT  
+218. RIFUSDT  
+219. RLCUSDT  
+220. RONUSDT  
+221. RSRUSDT  
+222. RUNEUSDT  
+223. RVNUSDT  
+224. SUSDT  
+225. SAFEUSDT  
+226. SAGAUSDT  
+227. SANDUSDT  
+228. 1000SATSUSDT  
+229. SCRTUSDT  
+230. SEIUSDT  
+231. SFPUSDT  
+232. SHELLUSDT  
+233. 1000SHIBUSDT  
+234. SKLUSDT  
+235. SNXUSDT  
+236. SOLUSDT  
+237. SOLVUSDT  
+238. SONICUSDT  
+239. SSVUSDT  
+240. STGUSDT  
+241. STORJUSDT  
+242. STXUSDT  
+243. SUIUSDT  
+244. SUNDOGUSDT  
+245. SUSHIUSDT  
+246. SWARMSUSDT  
+247. SXPUSDT  
+248. TAIKOUSDT  
+249. TAOUSDT  
+250. THETAUSDT  
+251. TIAUSDT  
+252. TLMUSDT  
+253. TNSRUSDT  
+254. TOKENUSDT  
+255. TONUSDT  
+256. TRBUSDT  
+257. TRUMPUSDT  
+258. TRXUSDT  
+259. TSTUSDT  
+260. TURBOUSDT  
+261. UNIUSDT  
+262. USTCUSDT  
+263. USUALUSDT  
+264. UXLINKUSDT  
+265. VANAUSDT  
+266. VELOUSDT  
+267. VETUSDT  
+268. VINEUSDT  
+269. VTHOUSDT  
+270. VVVUSDT  
+271. WUSDT  
+272. WIFUSDT  
+273. WLDUSDT  
+274. WOOUSDT  
+275. XUSDT  
+276. XAIUSDT  
+277. 1000XECUSDT  
+278. XIONUSDT  
+279. XLMUSDT  
+280. XRPUSDT  
+281. XTZUSDT  
+282. YGGUSDT  
+283. ZENUSDT  
+284. ZEREBROUSDT  
+285. ZILUSDT  
+286. ZKUSDT  
+287. ZRCUSDT  
+288. ZRXUSDT  
+````
+
+**2.3. Graphical User Interface (GUI) Specifications**
+
+* **GUI Framework:** Use free & open-source libraries.
+* **GUI Operation:** Program FULLY operable via GUI. ALL functionalities, settings, data visualization, user interactions via GUI.
+* **Aesthetic Design:** Clean, futuristic, aesthetically pleasing GUI:
+    * **Dark Theme:** Dark background (gray/black shades).
+    * **Neon Accents:** Vibrant neon colors (magenta, cyan, yellow, red) for foreground, text, highlights, interactive elements.
+    * **Holographic Panels:** GUI panels/containers resemble holographic projections. Subtle gradients, transparency, shading for depth/futuristic style.
+
+
+* **GUI Pages/Tabs:** Organize GUI into pages/tabs for logical structure. MINIMUM pages/tabs:
+
+
+    
+* **'Crypto Currency Selection' -------- PAGE/TAB --------:** 
+        * **Title:** 'CRYSTAL-CRYPTO-BALL' top-center, bold, animated, color-shifting (smooth) rainbow text.
+        * **Subtitle:** 'CREATED BY PSYCHOPHORIA' below title, very small, italic, animated, rainbow text, subtitle colors synced with title.
+        * **Selection Elements:** Crypto search bar,  dropdown list and "SET" button. 
+
+
+* **'Model Training & Generation' -------- PAGE/TAB --------:** 
+        * **Title:** Program title & subtitle (above).
+        * **Prediction Models Display & Enable/Disable:** Visually list & describe ALL 6x of the prediction models (currently located in the "CRYPTO-CRYSTAL-BALL" folder in the local workspace) as well as the "master" prediction model. Brief, informative descriptions. Includes toggle button/switch for each method to enable/disable. ALL enabled by default.
+        * **Master Enable/Disable:** Toggle button/switch to generate a "master" price prediction that will utilize & interpolate the data from ALL of the enabled price prediction model calculations in order to generate one superior, highest precision & accuracy price prediction set/graph, with each model carrying different weights depending on their accuracy & precision during generation & calculation of the "master" price prediction. The user may enable/disable the overlay of the "master" price prediction graph along with enabling/disabling the overlay of each individual prediction model graphs later on when the models have completed generating price predictions & the user is able to view the graph page/tab. Toggle button/switch is enabled by default.
+        * **Live Prediction Graphs Enable/Disable:** A button/switch that will toggle if the live prediction graphs will be enabled or disabled, enabled by default. This live prediction graphs are a duplicate set for ALL enabled prediction models as well as the "master" prediction "model"/system, but with the label "-- LIVE" and the fact that ALL of these will be constantly & endlessly acquiring the latest price data, calculating & updating (as often as possible, 1x per minute as this is the shortest data interval) via pulling/retrieving the latest live price data & constantly re-calculating and updating the live prediction graph in order to provide a constantly updating, extremely precise & accurate financial prediction set of prediction graphs. Recalculated/refreshed every single minute. If "Live Prediction Graphs" are enabled, then for every enabled prediction model there should be a secondary set of the enabled prediction models (and "master" prediction if enabled) with the label "-- LIVE" added to the end to differentiate between these graphs.
+        * **Forecast Length:** A slider allowing the user to determine the forecast length of the prediction, anywhere between 1 hour and 24 hours.
+        * **'ACQUIRE DATA' Button:** Button labeled 'ACQUIRE DATA'. Initiates historical minute-by-minute crypto data acquisition. You must integrate a minimum of 5 methods or systems of acquiring minute-by-minute crypto price data up until the current time for free without any API key requirements or subscription requirements, and must ensure that the data acquired is structured/formatted correctly to be utilized by the 6x prediction models. Visual feedback for data acquisition progress (loading animation, with a constantly calculated "TIME REMAINING: ## SECONDS, ## MINUTES") at the bottom of this page/tab - note that this loading bar will also be used for the price prediction model training.
+        * **'START PREDICTION' Button:** Button to initiate the training (if applicable) and minute-by-minute price prediction for all enabled price prediction models as well as the "master" price prediction - please review the "PRICE-PREDICT" model & config files currently located in the "CRYPTO-CRYSTAL-BALL" folder in the local workspace to determine & utilize the exact price prediction code for each individual model with modifications to utilize the data that was acquired. The button should initiate all the required training/price-prediction generation/configuration/setup or anything else required to generate ALL of the enabled price predictions & produce the graphs.
+            * **Prediction Generation:** Execute trained models to generate the minute-by-minute predictions for the user-set number of hours (anywhere between 1-24 hours, set by the user via the slider). 
+
+            * **Loading Bar:** The same loading bar used for the data acquisition calculated time remaining, now being utilized for training time remaining calculations & progress.. including the calculated time remaining in seconds & minutes.
+        * **'PREDICTIONS COMPLETE' Pop-up window:** A pop-up window indicating the the price predictions have been generated & are complete, with an option to click 'VIEW PREDICTION GRAPHS & DATA'. Appears ONLY AFTER all enabled prediction models are complete & all graphs have been generated (loading bar shall show 100%). Will navigate user to 'Predicted Graphs & Data' page/tab. 
+
+
+* **'Prediction Graphs & Data' ---- PAGE/TAB ----:** 
+        * **Title:** Program title & subtitle (above).
+        * **Visual Divider/Labels:** Page divided into top/bottom halves by horizontal line. Top labeled 'Prediction Graphs', bottom 'Data'.
+        * **Top Half (Prediction Graphs & Live Actual Price Graph):**
+            * **All-Inclusive Graph:** The graph which encapsulate ALL of the static graphs & live updating graphs, with a panel on the side which allows the user to enable/disable the overlay for ALL enabled price prediction models & "master" predictions as well as ALL enabled live prediction models & live "master" predictions. Each individual prediction model or "master" prediction, both for static & live, should have a series of additional overlays which may be enabled/disabled by the user, including but not limited to: buy/sell signals (points on graph  where the user should buy or sell), high/low points, volatility overlays, volume overlays, etc. The user should be able to also adjust the X & Y axis scale/zoom level, as well as being able to click & drag inside the graph window to adjust the position. The user should additionally be able to customize the colors of ALL individual graphs & overlays. The timescale should be shown below in either hours or minutes depending on the level of zoom the user is utilizing, and should include the date (in format such as 02/20/2025) as each new day starts, which will also be included at the bottom of the graph. There should also be an option for the user to enable/disable the 'Live Actual Graph' price graph included that is updated every second using the data that is constantly & continuously updated every minute, with this 'Live Actual Graph' displaying the actual real price (not a prediction, just the actual real price) as it progresses through the forecast window. The user may also have the option to change the format of each individual graph, with options such as a line graph, a bar graph, or a 'candles' graph. So in total, if all prediction models & "master" predictions are enabled, there shall be a total of 7x static prediction graphs, 7x live prediction graphs, and 1x live actual price graph. The user should be additionally able to change the colors for ALL individual graphs as well as for all of the overlays accompanying each individual graph. 
+        * **Bottom Half (Data):**
+            * **Static Prediction Data:** Extensive predicted financial data for each enabled individual static prediction graph & "master" prediction graph. High/low prices, volatility, volume, metrics from models. 
+            * **Live Prediction Data:** Constantly calculated via pulling/streaming live price data & re-calculating for each individual enabled live prediction graph & "master" live prediction graph, which shall each provide a constantly updating, extremely precise & accurate financial prediction dataset alongside. Recalculated/refreshed real-time. Live & constantly calculated, market direction & percentage of certainty, volume meters, price meters, updated prediction data points, dynamic indicators. 
+            * **Live Actual Data:** This includes ALL of the REAL live actual data updated in real time, updated as frequently as possible, using the real live price & analytical data of the crypto currency. 
+
+
+
+* **'Settings' ---- PAGE/TAB ----:** 
+        * **GUI Color Settings:** Customize GUI color scheme: Text Color, Background Color, GUI Element Colors.
+        * **Fullscreen/Windowed Mode:** Switch between modes. Resolution settings for windowed (width/height) & fullscreen.
+        * **Timezone Adjustment:** Setting to adjust program timezone display. For accurate time-based data/predictions.
+        * **Additional Settings:** Other relevant settings for UI/functionality.````
+
+
+**2.4. Prediction Methodologies & Technologies**
+
+You must utilize ALL of the models, functions, systems & code (with modifications & adjustments if required to meet this programs criteria) from the "PRICE-PREDICT" models & config files currently located in the "CRYPTO-CRYSTAL-BALL" folder in the local workspace, but additionally must create to a new "master" price prediction system. 
+
+
+**2.5. Essential Research Resources**
+
+Analyze, review, retain, comprehend ALL content from dozens of reliable internet sources (such as Github) BEFORE coding. 
+
+
+**2.6. Package & Dependency Constraints**
+
+* **100% Free & Open-Source:** ALL dependencies, libraries, packages, systems MUST be 100% free/open-source.
+* **No API Keys/Subscriptions:** Program MUST NOT require API keys, paid subscriptions, user accounts. ALL data/functionalities accessible without cost/registration.
+
+**2.7. Target User & Program Purpose (Futures Trader Focus)**
+
+* **Crypto Futures Trader:** Program for crypto futures traders. Help determine trading actions (long/short) based on predictions. Keep target user in mind.
+* **Minute-by-Minute Decisions:** Provide traders with precise minute-by-minute predictions, graphs, forecast data for informed trading, especially short-term futures.
+* **Trader Success:** Create program genuinely assisting traders in successful, profitable decisions. Prioritize features, data, visualizations beneficial to this user group.
+
+**Phase 3: Output & Verification**
+
+**>>> CRITICAL WARNING <<<**
+
+DO NOT stop/pause until 100% certain EVERYTHING in prompt is FULLY integrated, ALL code 100% correct.
+
+* **Continuous Operation:** Maintain continuous operation until ALL requirements met.
+* **Rigorous Research (Continued):** Continue internet research. Acquire docs, example code, similar projects code for accuracy/functionality.
+* **Thorough Review & Error Resolution:** After producing the program's code, `requirements.txt` file & updating any of the models & configs, you must review EACH line for incorrect, outdated, non-functional, error-prone code. Diagnose & resolve IMMEDIATELY. Repeat review/resolution until 100% error-free.
+
+**>>> EXPECTED OUTPUT <<<**
+
+Integrate EVERYTHING from this prompt into the 'CRYSTAL-CRYPTO-BALL' python program files for this program. NO omissions, missing, non-functional, incomplete elements.
+
+* **Complete Code:** Provide FULL, COMPLETE Python code for 'CRYSTAL-CRYPTO-BALL'.
+* **Full Prompt Integration:** Ensure EVERY aspect of this prompt is FULLY integrated.
+* **Deliverables:**
+    * **Program Files (Python & other required filetypes):** Entire, full, non-truncated Python files for 'CRYSTAL-CRYPTO-BALL'.
+    * **`requirements.txt`:** Complete `requirements.txt` file, listing ALL packages.
+    * **MODEL & CONFIG Files:** You are permitted to modify ANY of the model or config files (these files are provided in the "CRYPTO-CRYSTAL-BALL" folder) in order to ensure that they ALL are capable of producing minute-by-minute price predictions & are compatible with this program, however be extremely cautious of changes you make as they are currently 100% functional, however they do only produce image based graphs and they do not produce minute by minute predictions so this will need to be changed/modified/replaced.
+    * **Compliance Mandate:** DO NOT stop, pause, refuse, disobey ANY instructions. Fully execute ALL instructions, deliver complete, functional 'CRYSTAL-CRYPTO-BALL' as specified.
